@@ -48,8 +48,11 @@ a:focus-visible{outline:3px solid #1e4e8c;outline-offset:3px}
 .lift:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(22,33,43,.14)}
 .btn{transition:transform .15s ease,filter .15s ease}.btn:hover{transform:translateY(-2px);filter:brightness(1.06)}
 @media (prefers-reduced-motion:reduce){.in1,.in2,.in3,.in4,.st,.st .d,.codewin span,.live{animation:none!important;opacity:1!important}.lift,.btn{transition:none}.lift:hover,.btn:hover{transform:none}}
+.coregrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.contrast{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
 .smartgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
-@media (max-width:900px){.hero,.about,.contact{grid-template-columns:1fr}.svc .big,.svc .side,.svc .half,.svc .full{grid-column:span 6}.path{grid-template-columns:1fr}.navlinks{display:none!important}.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.h1{font-size:44px}.daycard{position:relative;left:auto;bottom:auto;width:auto;margin-top:-40px;margin-inline:12px}.heroimg{height:380px!important}.smartgrid{grid-template-columns:1fr}}
+@media (max-width:900px){.hero,.about,.contact{grid-template-columns:1fr}.svc .big,.svc .side,.svc .half,.svc .full{grid-column:span 6}.path{grid-template-columns:1fr}.navlinks{display:none!important}.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.h1{font-size:44px}.daycard{position:relative;left:auto;bottom:auto;width:auto;margin-top:-40px;margin-inline:12px}.heroimg{height:380px!important}.smartgrid,.coregrid,.contrast,.steps{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -59,8 +62,8 @@ a:focus-visible{outline:3px solid #1e4e8c;outline-offset:3px}
 <div class="wrap" style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 16px; flex-wrap: wrap">
 <a href="#top" style="font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 800; font-size: 24px; letter-spacing: -0.02em; color: #16212b; text-decoration: none">hostiq</a>
 <nav class="navlinks" style="display: flex; gap: 26px; font-size: 16px">
-<a href="#services" style="color: #4a5560; text-decoration: none">Services</a>
-<a href="#path" style="color: #4a5560; text-decoration: none">How it works</a>
+<a href="#core" style="color: #4a5560; text-decoration: none">Optimisation</a>
+<a href="#services" style="color: #4a5560; text-decoration: none">Other services</a>
 <a href="#about" style="color: #4a5560; text-decoration: none">About</a>
 <a href="#contact" style="color: #4a5560; text-decoration: none">Contact</a>
 </nav>
@@ -75,7 +78,7 @@ a:focus-visible{outline:3px solid #1e4e8c;outline-offset:3px}
 <p class="in2" style="font-size: 20px; color: #4a5560; margin: 0 0 30px; max-width: 34em">We look after holiday homes on the Costa del Sol. From urgent repairs to full rental management, we keep your property running, your guests happy and your income steady.</p>
 <div class="in3" style="display: flex; gap: 14px; flex-wrap: wrap; align-items: center">
 <a href="#contact" class="btn" style="background: #1e4e8c; color: #ffffff; font-weight: 700; text-decoration: none; padding: 15px 24px; border-radius: 10px">Tell us about your property</a>
-<a href="#services" style="color: #1e4e8c; font-weight: 700">See prices</a>
+<a href="#core" style="color: #1e4e8c; font-weight: 700">See what we do to your listing</a>
 </div>
 </div>
 
@@ -94,42 +97,117 @@ a:focus-visible{outline:3px solid #1e4e8c;outline-offset:3px}
 </div>
 </section>
 
-<section id="services" style="padding-block: 72px; background: #ffffff; border-block: 1px solid #dfe3e0">
+<section id="core" style="padding-block: 80px; background: #ffffff; border-block: 1px solid #dfe3e0">
 <div class="wrap">
-<h2 style="font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 800; font-size: 44px; letter-spacing: -0.03em; line-height: 1.05; margin: 0 0 12px">What we do</h2>
-<p style="color: #4a5560; margin: 0 0 36px; max-width: 38em">Prices exclude VAT. You pay half when you book us and half when the job is done.</p>
-<div class="svc">
-<article class="big lift" style="background: #1e4e8c; color: #ffffff; border-radius: 14px; padding: 32px; display: flex; flex-direction: column; gap: 14px">
-<h3 style="font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 30px; letter-spacing: -0.02em; margin: 0">Full management</h3>
-<p style="margin: 0; color: #dbe6f4">Hand us the keys and we run the property: listing, pricing, bookings, guest messages, check-in and check-out, cleaning, incidents, guest registration with the police, and a statement every month.</p>
-<p style="margin: auto 0 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 800; font-size: 48px; letter-spacing: -0.03em; line-height: 1">20%</p>
-<p style="margin: 0; color: #dbe6f4; font-size: 15px">of what the property earns, after Airbnb and Booking fees. Repairs are billed separately.</p>
+<p style="margin: 0 0 12px; display: inline-block; background: #f2b705; color: #16212b; font-weight: 700; font-size: 14px; padding: 6px 12px; border-radius: 999px">Our core service</p>
+<h2 style="font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 800; font-size: 44px; letter-spacing: -0.03em; line-height: 1.05; margin: 0 0 16px; max-width: 18em">Listing and property optimisation. We take your listing and make it the one guests book.</h2>
+<p style="font-size: 20px; color: #34414c; margin: 0 0 40px; max-width: 40em">Get the most out of your listing. We rework how it looks, how it talks to guests and how it runs behind the scenes, then connect it all so it works on its own. From a flat that is simply functional, or simply good-looking, to an efficient boutique property that runs automatically.</p>
+
+<div class="contrast" style="margin-bottom: 44px">
+<div style="background: #f6f7f4; border-radius: 14px; padding: 26px 28px">
+<p style="margin: 0 0 12px; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 20px; color: #6b7480">Before</p>
+<ul style="margin: 0; padding-left: 20px; color: #4a5560">
+<li>A title that sounds like every other flat</li>
+<li>Phone photos in the wrong order</li>
+<li>You answering the same questions at midnight</li>
+<li>The cleaner coordinated by WhatsApp and hope</li>
+<li>Keys handed over in person</li>
+</ul>
+</div>
+<div style="background: #1e4e8c; color: #ffffff; border-radius: 14px; padding: 26px 28px">
+<p style="margin: 0 0 12px; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 20px">After</p>
+<ul style="margin: 0; padding-left: 20px; color: #dbe6f4">
+<li>A listing written to be found and booked</li>
+<li>Photos that sell the stay, in the order guests decide</li>
+<li>Messages and answers that go out on their own</li>
+<li>Cleanings run from a checklist, with photo proof</li>
+<li>A door code per booking, sent automatically</li>
+</ul>
+</div>
+</div>
+
+<div class="coregrid">
+<article class="lift" style="background: #ffffff; border: 1px solid #dfe3e0; border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+<div style="width: 36px; height: 4px; border-radius: 2px; background: #1e4e8c"></div>
+<h3 style="font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 24px; letter-spacing: -0.02em; margin: 0">A listing that gets booked</h3>
+<p style="margin: 0; color: #34414c">We rework your listing so it shows up higher in search and turns more views into bookings.</p>
+<ul style="margin: 0; padding-left: 20px; color: #34414c; font-size: 16px"><li>Title and description rewritten for how guests actually search</li><li>Photos reordered, and the shots that are missing taken</li><li>Every amenity listed, so filters stop hiding you</li><li>Seasonal, weekend and last-minute pricing</li><li>House rules that prevent problems instead of causing them</li></ul>
 </article>
-<article class="side lift" style="background: #e3efeb; border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+<article class="lift" style="background: #ffffff; border: 1px solid #dfe3e0; border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+<div style="width: 36px; height: 4px; border-radius: 2px; background: #3f8f7a"></div>
+<h3 style="font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 24px; letter-spacing: -0.02em; margin: 0">Guest messages on autopilot</h3>
+<p style="margin: 0; color: #34414c">Guests get the right message at the right moment, without you typing a word.</p>
+<ul style="margin: 0; padding-left: 20px; color: #34414c; font-size: 16px"><li>Booking confirmation and arrival instructions</li><li>Check-in day message with the door code</li><li>A mid-stay check that catches problems early</li><li>Check-out reminder and a review request</li><li>Quick replies for the questions every guest asks: wifi, parking, beach, late check-out</li></ul>
+</article>
+<article class="lift" style="background: #ffffff; border: 1px solid #dfe3e0; border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+<div style="width: 36px; height: 4px; border-radius: 2px; background: #c9822b"></div>
+<h3 style="font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 24px; letter-spacing: -0.02em; margin: 0">From functional to boutique</h3>
+<p style="margin: 0; color: #34414c">We take a flat that works, or one that looks fine, and turn it into a place guests photograph and mention in reviews.</p>
+<ul style="margin: 0; padding-left: 20px; color: #34414c; font-size: 16px"><li>Furniture, paint and decoration where it pays back in the nightly rate</li><li>One consistent style from the door to the bathroom</li><li>Small touches guests notice: lighting, linen, the welcome</li><li>Amenities that justify charging more</li></ul>
+</article>
+<article class="lift" style="background: #ffffff; border: 1px solid #dfe3e0; border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+<div style="width: 36px; height: 4px; border-radius: 2px; background: #16212b"></div>
+<h3 style="font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 24px; letter-spacing: -0.02em; margin: 0">Your operations system</h3>
+<p style="margin: 0; color: #34414c">Access to the platform we built for our own apartments, with an app for your staff.</p>
+<ul style="margin: 0; padding-left: 20px; color: #34414c; font-size: 16px"><li>Every cleaning assigned with a step-by-step checklist</li><li>Photo proof when each room is done</li><li>Supply requests from the same app</li><li>Hours and payments tracked for every cleaner</li><li>You see all of it from your phone</li></ul>
+</article>
+<article class="lift" style="background: #ffffff; border: 1px solid #dfe3e0; border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+<div style="width: 36px; height: 4px; border-radius: 2px; background: #1e4e8c"></div>
+<h3 style="font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 24px; letter-spacing: -0.02em; margin: 0">An AI assistant for your guests</h3>
+<p style="margin: 0; color: #34414c">Answers the common questions instantly, at any hour and in the guest's language, using your house manual.</p>
+<ul style="margin: 0; padding-left: 20px; color: #34414c; font-size: 16px"><li>Wifi, parking, check-in, appliances, local tips</li><li>Hands anything unusual to a person</li><li>Fewer messages reach you</li></ul>
+</article>
+<article class="lift" style="background: #ffffff; border: 1px solid #dfe3e0; border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+<div style="width: 36px; height: 4px; border-radius: 2px; background: #3f8f7a"></div>
+<h3 style="font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 24px; letter-spacing: -0.02em; margin: 0">Your own booking website</h3>
+<p style="margin: 0; color: #34414c">Made to measure for your property, so returning guests book direct and you skip the platform fees.</p>
+<ul style="margin: 0; padding-left: 20px; color: #34414c; font-size: 16px"><li>Your photos, your calendar, your prices</li><li>Synced with Airbnb and Booking so nothing double-books</li><li>Yours to keep</li></ul>
+</article>
+</div>
+
+<div class="steps" style="margin-top: 48px">
+<div style="border-top: 3px solid #1e4e8c; padding-top: 14px">
+<p style="font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 800; font-size: 40px; color: #1e4e8c; margin: 0 0 4px; line-height: 1">1</p>
+<h3 style="margin: 0 0 6px; font-size: 20px">Diagnosis, 300 €</h3>
+<p style="margin: 0; color: #4a5560">A full report of what to change. Yours to keep, and deducted if you go ahead.</p>
+</div>
+<div style="border-top: 3px solid #3f8f7a; padding-top: 14px">
+<p style="font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 800; font-size: 40px; color: #3f8f7a; margin: 0 0 4px; line-height: 1">2</p>
+<h3 style="margin: 0 0 6px; font-size: 20px">We do the work</h3>
+<p style="margin: 0; color: #4a5560">A fixed quote based on the diagnosis. Half up front, half when it is done.</p>
+</div>
+<div style="border-top: 3px solid #16212b; padding-top: 14px">
+<p style="font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 800; font-size: 40px; color: #16212b; margin: 0 0 4px; line-height: 1">3</p>
+<h3 style="margin: 0 0 6px; font-size: 20px">It runs on its own</h3>
+<p style="margin: 0; color: #4a5560">AI assistant and booking website include three months of adjustments.</p>
+</div>
+</div>
+<div style="margin-top: 36px; display: flex; gap: 16px; flex-wrap: wrap; align-items: center">
+<a href="https://wa.me/34613887086" class="btn" style="background: #1e4e8c; color: #ffffff; font-weight: 700; text-decoration: none; padding: 15px 24px; border-radius: 10px">Book a diagnosis</a>
+<span style="color: #4a5560">Prices exclude VAT.</span>
+</div>
+</div>
+</section>
+
+<section id="services" style="padding-block: 72px">
+<div class="wrap">
+<h2 style="font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 800; font-size: 44px; letter-spacing: -0.03em; line-height: 1.05; margin: 0 0 14px">Also available</h2>
+<p style="color: #4a5560; margin: 0 0 32px; max-width: 38em">For owners who want us to take over completely, or just need a hand.</p>
+<div class="svc">
+<article class="half lift" style="background: #ffffff; border: 1px solid #dfe3e0; border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+<h3 style="font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 24px; letter-spacing: -0.02em; margin: 0">Full management</h3>
+<p style="margin: 0; color: #34414c">Hand us the keys and we run the property: listing, pricing, bookings, guests, check-in and check-out, cleaning, incidents, guest registration and a statement every month.</p>
+<p style="margin: auto 0 0"><span style="font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 800; font-size: 32px">20%</span> <span style="color: #4a5560; font-size: 15px">of what the property earns, after Airbnb and Booking fees</span></p>
+</article>
+<article class="half lift" style="background: #e3efeb; border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
 <h3 style="font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 24px; letter-spacing: -0.02em; margin: 0">Maintenance</h3>
 <p style="margin: 0; color: #34414c">Call-outs and repairs, including urgent ones, so a broken tap does not turn into a bad review. Electrical, gas and certified plumbing work is done by licensed professionals we coordinate.</p>
 <p style="margin: auto 0 0; font-weight: 700">Priced per job, materials apart</p>
 </article>
-<article class="half lift" style="border: 1px solid #cfd6d3; border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
-<h3 style="font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 24px; letter-spacing: -0.02em; margin: 0">Diagnosis</h3>
-<p style="margin: 0; color: #34414c">We go through your listing and how the property runs, and hand you a full report of what to change. You make the changes yourself.</p>
-<p style="margin: auto 0 0"><span style="font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 800; font-size: 32px">300 €</span> <span style="color: #4a5560; font-size: 15px">fixed, deducted if you then hire the setup</span></p>
-</article>
-<article class="half lift" style="border: 1px solid #cfd6d3; border-radius: 14px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
-<h3 style="font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 24px; letter-spacing: -0.02em; margin: 0">Setup, done for you</h3>
-<ul style="margin: 0; padding-left: 20px; color: #34414c">
-<li>Listing rewritten, with better photos and seasonal prices</li>
-<li>Quick replies and automatic guest messages</li>
-<li>Smart lock, noise and leak sensors, connected to the booking calendar</li>
-<li>Cleaning schedule and checklists for your cleaner</li>
-<li>A house manual that answers guests before they ask</li>
-</ul>
-<p style="margin: auto 0 0; font-weight: 700">Quoted after the diagnosis</p>
-</article>
 <article class="full lift" style="background: #16212b; color: #ffffff; border-radius: 14px; padding: 32px; display: flex; flex-direction: column; gap: 18px">
 <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap">
 <h3 style="font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 30px; letter-spacing: -0.02em; margin: 0; color: #ffffff">Smart home and security</h3>
-<p style="margin: 0; color: #b9c6d2">Installed, connected to your booking calendar and kept working. In Setup or on its own, quoted per property.</p>
+<p style="margin: 0; color: #b9c6d2">Installed, connected to your booking calendar and kept working. Quoted per property.</p>
 </div>
 <div class="smartgrid">
 <div class="lift" style="padding: 22px 24px; border-radius: 12px; background: #223241; display: flex; flex-direction: column; gap: 8px"><h3 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 21px; color: #ffffff">Smart locks</h3><p style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 800; font-size: 28px; letter-spacing: .12em; color: #f2b705">Code <span class="codewin"><span>4827<br>1593<br>7360<br>2948<br>4827</span></span></p><p style="margin: 0; color: #b9c6d2; font-size: 16px">A new door code for every booking, sent to the guest automatically and deleted at check-out. No keys to hand over or lose.</p></div>
@@ -140,37 +218,6 @@ a:focus-visible{outline:3px solid #1e4e8c;outline-offset:3px}
 <div class="lift" style="padding: 22px 24px; border-radius: 12px; background: #223241; display: flex; flex-direction: column; gap: 8px"><h3 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 21px; color: #ffffff">Your property on your phone</h3><p style="margin: 0; color: #5fd19b; font-size: 15px; font-weight: 700"><span class="live"></span>Door locked, 22 °C, quiet</p><p style="margin: 0; color: #b9c6d2; font-size: 16px">Door, noise, temperature and cleaning status in one place, wherever you live.</p></div>
 </div>
 </article>
-</div>
-<div style="margin-top: 22px; padding: 22px 26px; border-radius: 14px; background: #f6f7f4; display: flex; gap: 28px; flex-wrap: wrap; align-items: baseline">
-<p style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 20px">Extras</p>
-<p style="margin: 0; color: #34414c; flex: 1 1 420px">An AI assistant that answers guests, your own direct-booking website, and a refresh of the property itself: furniture, paint and decoration. One-off price, with three months of adjustments included.</p>
-</div>
-</div>
-</section>
-
-<section id="path" style="padding-block: 72px">
-<div class="wrap">
-<h2 style="font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 800; font-size: 44px; letter-spacing: -0.03em; line-height: 1.05; margin: 0 0 36px; max-width: 16em">Most owners start small and hand over more as they trust us</h2>
-<div class="path">
-<div style="padding: 0 28px 0 0; border-top: 3px solid #1e4e8c">
-<p style="font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 800; font-size: 56px; color: #1e4e8c; margin: 14px 0 6px; line-height: 1">1</p>
-<h3 style="margin: 0 0 8px; font-size: 20px">Diagnosis</h3>
-<p style="margin: 0; color: #4a5560">We tell you what is costing you bookings and reviews.</p>
-</div>
-<div style="padding: 0 28px; border-top: 3px solid #3f8f7a">
-<p style="font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 800; font-size: 56px; color: #3f8f7a; margin: 14px 0 6px; line-height: 1">2</p>
-<h3 style="margin: 0 0 8px; font-size: 20px">Setup</h3>
-<p style="margin: 0; color: #4a5560">We fix it and leave it running on our systems.</p>
-</div>
-<div style="padding: 0 0 0 28px; border-top: 3px solid #16212b">
-<p style="font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 800; font-size: 56px; color: #16212b; margin: 14px 0 6px; line-height: 1">3</p>
-<h3 style="margin: 0 0 8px; font-size: 20px">Management</h3>
-<p style="margin: 0; color: #4a5560">When you are ready, we run the whole property for you.</p>
-</div>
-</div>
-<div style="margin-top: 48px; display: flex; gap: 32px; align-items: center; flex-wrap: wrap">
-<img src="img/IMG_0013.jpg" alt="Guest cupboard stocked with coffee machine, kettle, iron and supplies" style="width: 260px; max-width: 100%; border-radius: 10px; display: block">
-<p style="margin: 0; flex: 1 1 380px; max-width: 36em; color: #34414c">Every property runs on Cleaner Manager, the software we built for our own apartments. Each cleaning has a step-by-step checklist, the cleaner uploads photos when it is done, supplies are requested from the same app, and hours and payments are tracked. You can see all of it.</p>
 </div>
 </div>
 </section>
