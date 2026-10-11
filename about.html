@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>About | Hostiq Solutions</title>
+<meta name="description" content="Listing and property optimisation, management, maintenance and smart home for holiday rentals on the Costa del Sol. WhatsApp +34 613 88 70 86.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231e4e8c'/%3E%3Ctext x='16' y='22' font-family='sans-serif' font-size='18' font-weight='700' fill='white' text-anchor='middle'%3Eh%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&amp;family=Atkinson+Hyperlegible:wght@400;700&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#1e4e8c}a:hover{color:#163a68}
+a:focus-visible{outline:3px solid #1e4e8c;outline-offset:3px}
+.wrap{max-width:1160px;margin:0 auto;padding-inline:24px;box-sizing:border-box}
+.hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:56px;align-items:center}
+.day{display:grid;grid-template-columns:72px 18px minmax(0,1fr);row-gap:0}
+.svc{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:18px}
+.svc .big{grid-column:span 4}
+.svc .side{grid-column:span 2}
+.svc .half{grid-column:span 3}
+.svc .full{grid-column:span 6}
+.path{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0}
+.about{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:start}
+.gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.gallery img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block;border-radius:3px}
+.gallery img.tall{grid-row:span 2;aspect-ratio:auto;height:100%}
+.contact{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:40px;align-items:center}
+.h1{font-size:64px}
+.daycard{position:absolute;left:-28px;bottom:-28px;width:330px}
+
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.in1,.in2,.in3,.in4{animation:rise .8s cubic-bezier(.2,.7,.2,1) both}
+.in2{animation-delay:.12s}.in3{animation-delay:.24s}.in4{animation-delay:.5s}
+@keyframes step{0%,6%{opacity:.28}10%,88%{opacity:1}96%,100%{opacity:.28}}
+@keyframes dot{0%,6%{transform:scale(.6);box-shadow:0 0 0 0 rgba(30,78,140,0)}10%{transform:scale(1.5);box-shadow:0 0 0 6px rgba(30,78,140,.18)}16%,88%{transform:scale(1);box-shadow:0 0 0 0 rgba(30,78,140,0)}96%,100%{transform:scale(.6)}}
+.st{animation:step 10s ease-in-out infinite both}
+.st .d{animation:dot 10s ease-in-out infinite both}
+.st1{animation-delay:.6s}.st1 .d{animation-delay:.6s}
+.st2{animation-delay:2.1s}.st2 .d{animation-delay:2.1s}
+.st3{animation-delay:3.6s}.st3 .d{animation-delay:3.6s}
+.st4{animation-delay:5.1s}.st4 .d{animation-delay:5.1s}
+@keyframes code{0%,22%{transform:translateY(0)}25%,47%{transform:translateY(-1.25em)}50%,72%{transform:translateY(-2.5em)}75%,97%{transform:translateY(-3.75em)}100%{transform:translateY(-5em)}}
+.codewin{display:inline-block;height:1.25em;overflow:hidden;vertical-align:bottom}
+.codewin span{display:block;line-height:1.25em;animation:code 12s steps(1,end) infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.live{display:inline-block;width:8px;height:8px;border-radius:50%;background:#5fd19b;margin-right:8px;animation:pulse 2s ease-in-out infinite}
+.lift{transition:transform .2s ease,box-shadow .2s ease}
+.lift:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(22,33,43,.14)}
+.btn{transition:transform .15s ease,filter .15s ease}.btn:hover{transform:translateY(-2px);filter:brightness(1.06)}
+@media (prefers-reduced-motion:reduce){.in1,.in2,.in3,.in4,.st,.st .d,.codewin span,.live{animation:none!important;opacity:1!important}.lift,.btn{transition:none}.lift:hover,.btn:hover{transform:none}}
+.hometiles{display:grid;grid-template-columns:2fr 1fr 1fr;gap:18px}
+.coregrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.contrast{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.smartgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+@media (max-width:900px){.hero,.about,.contact{grid-template-columns:1fr}.svc .big,.svc .side,.svc .half,.svc .full{grid-column:span 6}.path{grid-template-columns:1fr}.navlinks{display:none!important}.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.h1{font-size:44px}.daycard{position:relative;left:auto;bottom:auto;width:auto;margin-top:-40px;margin-inline:12px}.heroimg{height:380px!important}.smartgrid,.coregrid,.contrast,.steps,.hometiles{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div style="background: #f6f7f4; color: #16212b; font-family: 'Atkinson Hyperlegible', system-ui, sans-serif; font-size: 18px; line-height: 1.6">
+<header style="background: #f6f7f4; border-bottom: 1px solid #dfe3e0">
+<div class="wrap" style="display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 16px; flex-wrap: wrap">
+<a href="index.html" style="font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 800; font-size: 24px; letter-spacing: -0.02em; color: #16212b; text-decoration: none">hostiq</a>
+<nav class="navlinks" style="display: flex; gap: 26px; font-size: 16px">
+<a href="index.html" style="color: #4a5560; text-decoration: none;">Home</a>
+<a href="optimisation.html" style="color: #4a5560; text-decoration: none;">Optimisation</a>
+<a href="services.html" style="color: #4a5560; text-decoration: none;">Services</a>
+<a href="about.html" style="color: #16212b; text-decoration: none; font-weight: 700;">About</a>
+<a href="contact.html" style="color: #4a5560; text-decoration: none;">Contact</a>
+</nav>
+<a href="https://wa.me/34613887086" class="btn" style="background: #f2b705; color: #16212b; font-weight: 700; text-decoration: none; padding: 11px 18px; border-radius: 999px; font-size: 16px">WhatsApp us</a>
+</div>
+</header>
+
+<section id="about" style="padding-block: 72px">
+<div class="wrap about">
+<div>
+<h2 style="font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 800; font-size: 44px; letter-spacing: -0.03em; line-height: 1.05; margin: 0 0 18px">We were hosts first</h2>
+<p style="margin: 0 0 14px">Hostiq is run by Angel González, a carpenter based in Málaga. For five years he hosted his own short-term rental apartments in Dublin, and built the messages, checklists and routines we now set up for other owners.</p>
+<p style="margin: 0; color: #4a5560">The photos on this page are of those apartments. We speak English and Spanish.</p>
+</div>
+<div class="gallery">
+<img class="tall" src="img/IMG_0034.jpg" alt="Double bedroom with grey bedding and wall art">
+<img src="img/IMG_0231.jpg" alt="Shampoo, conditioner and body wash dispensers on the shower wall">
+<img src="img/IMG_0309.jpg" alt="Small cactus plants on a bedside shelf">
+<img src="img/IMG_9973.jpg" alt="Desk with lamp, pens and notes for guests">
+<img src="img/IMG_0346.jpg" alt="Bedroom with moon print and folded towels">
+<img src="img/IMG_0099.jpg" alt="Bedroom with desk, lamp and wall art">
+</div>
+</div>
+</section>
+
+<section style="padding-block: 64px; background: #16212b; color: #ffffff">
+<div class="wrap" style="display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap">
+<h2 style="font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 800; font-size: 36px; letter-spacing: -0.03em; line-height: 1.1; margin: 0; color: #ffffff; max-width: 18em">Tell us about your property. We reply the same day.</h2>
+<a href="https://wa.me/34613887086" class="btn" style="background: #f2b705; color: #16212b; font-weight: 700; text-decoration: none; padding: 16px 24px; border-radius: 12px; font-size: 18px">WhatsApp +34 613 88 70 86</a>
+</div>
+</section>
+<footer style="padding-block: 28px; border-top: 1px solid #dfe3e0; color: #6b7480; font-size: 14px"><div class="wrap">Hostiq Solutions, Málaga, 2026</div></footer>
+</div>
+</body>
+</html>
