@@ -18,6 +18,7 @@ a:focus-visible{outline:3px solid #1e4e8c;outline-offset:3px}
 .svc .big{grid-column:span 4}
 .svc .side{grid-column:span 2}
 .svc .half{grid-column:span 3}
+.svc .full{grid-column:span 6}
 .path{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0}
 .about{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:start}
 .gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
@@ -48,7 +49,7 @@ a:focus-visible{outline:3px solid #1e4e8c;outline-offset:3px}
 .btn{transition:transform .15s ease,filter .15s ease}.btn:hover{transform:translateY(-2px);filter:brightness(1.06)}
 @media (prefers-reduced-motion:reduce){.in1,.in2,.in3,.in4,.st,.st .d,.codewin span,.live{animation:none!important;opacity:1!important}.lift,.btn{transition:none}.lift:hover,.btn:hover{transform:none}}
 .smartgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
-@media (max-width:900px){.hero,.about,.contact{grid-template-columns:1fr}.svc .big,.svc .side,.svc .half{grid-column:span 6}.path{grid-template-columns:1fr}.navlinks{display:none!important}.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.h1{font-size:44px}.daycard{position:relative;left:auto;bottom:auto;width:auto;margin-top:-40px;margin-inline:12px}.heroimg{height:380px!important}.smartgrid{grid-template-columns:1fr}}
+@media (max-width:900px){.hero,.about,.contact{grid-template-columns:1fr}.svc .big,.svc .side,.svc .half,.svc .full{grid-column:span 6}.path{grid-template-columns:1fr}.navlinks{display:none!important}.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.h1{font-size:44px}.daycard{position:relative;left:auto;bottom:auto;width:auto;margin-top:-40px;margin-inline:12px}.heroimg{height:380px!important}.smartgrid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -59,7 +60,6 @@ a:focus-visible{outline:3px solid #1e4e8c;outline-offset:3px}
 <a href="#top" style="font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 800; font-size: 24px; letter-spacing: -0.02em; color: #16212b; text-decoration: none">hostiq</a>
 <nav class="navlinks" style="display: flex; gap: 26px; font-size: 16px">
 <a href="#services" style="color: #4a5560; text-decoration: none">Services</a>
-<a href="#smart" style="color: #4a5560; text-decoration: none">Smart home</a>
 <a href="#path" style="color: #4a5560; text-decoration: none">How it works</a>
 <a href="#about" style="color: #4a5560; text-decoration: none">About</a>
 <a href="#contact" style="color: #4a5560; text-decoration: none">Contact</a>
@@ -72,7 +72,7 @@ a:focus-visible{outline:3px solid #1e4e8c;outline-offset:3px}
 <div class="wrap hero">
 <div>
 <h1 class="h1 in1" style="font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 800; line-height: 1.0; letter-spacing: -0.035em; margin: 0 0 22px">A holiday rental that runs without you.</h1>
-<p class="in2" style="font-size: 20px; color: #4a5560; margin: 0 0 30px; max-width: 34em">More bookings, better reviews and fewer calls to you. We set up and run holiday rentals on the Costa del Sol with smart locks, sensors that warn us before guests complain, automatic guest messages and a cleaning system you can check from your phone.</p>
+<p class="in2" style="font-size: 20px; color: #4a5560; margin: 0 0 30px; max-width: 34em">We look after holiday homes on the Costa del Sol. From urgent repairs to full rental management, we keep your property running, your guests happy and your income steady.</p>
 <div class="in3" style="display: flex; gap: 14px; flex-wrap: wrap; align-items: center">
 <a href="#contact" class="btn" style="background: #1e4e8c; color: #ffffff; font-weight: 700; text-decoration: none; padding: 15px 24px; border-radius: 10px">Tell us about your property</a>
 <a href="#services" style="color: #1e4e8c; font-weight: 700">See prices</a>
@@ -126,27 +126,25 @@ a:focus-visible{outline:3px solid #1e4e8c;outline-offset:3px}
 </ul>
 <p style="margin: auto 0 0; font-weight: 700">Quoted after the diagnosis</p>
 </article>
+<article class="full lift" style="background: #16212b; color: #ffffff; border-radius: 14px; padding: 32px; display: flex; flex-direction: column; gap: 18px">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap">
+<h3 style="font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 30px; letter-spacing: -0.02em; margin: 0; color: #ffffff">Smart home and security</h3>
+<p style="margin: 0; color: #b9c6d2">Installed, connected to your booking calendar and kept working. In Setup or on its own, quoted per property.</p>
+</div>
+<div class="smartgrid">
+<div class="lift" style="padding: 22px 24px; border-radius: 12px; background: #223241; display: flex; flex-direction: column; gap: 8px"><h3 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 21px; color: #ffffff">Smart locks</h3><p style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 800; font-size: 28px; letter-spacing: .12em; color: #f2b705">Code <span class="codewin"><span>4827<br>1593<br>7360<br>2948<br>4827</span></span></p><p style="margin: 0; color: #b9c6d2; font-size: 16px">A new door code for every booking, sent to the guest automatically and deleted at check-out. No keys to hand over or lose.</p></div>
+<div class="lift" style="padding: 22px 24px; border-radius: 12px; background: #223241; display: flex; flex-direction: column; gap: 8px"><h3 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 21px; color: #ffffff">Noise monitoring</h3><p style="margin: 0; color: #b9c6d2; font-size: 16px">Sensors that measure volume only and never record conversations. We get an alert and act before the neighbours complain.</p></div>
+<div class="lift" style="padding: 22px 24px; border-radius: 12px; background: #223241; display: flex; flex-direction: column; gap: 8px"><h3 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 21px; color: #ffffff">Leak sensors</h3><p style="margin: 0; color: #b9c6d2; font-size: 16px">An alert the moment there is water where there should not be, before it reaches the flat below.</p></div>
+<div class="lift" style="padding: 22px 24px; border-radius: 12px; background: #223241; display: flex; flex-direction: column; gap: 8px"><h3 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 21px; color: #ffffff">Climate control</h3><p style="margin: 0; color: #b9c6d2; font-size: 16px">Air conditioning and heating switch off when guests leave and on before they arrive, so the bill only runs when someone is there.</p></div>
+<div class="lift" style="padding: 22px 24px; border-radius: 12px; background: #223241; display: flex; flex-direction: column; gap: 8px"><h3 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 21px; color: #ffffff">Entrance cameras</h3><p style="margin: 0; color: #b9c6d2; font-size: 16px">At the door or gate only, never inside the property, as Airbnb rules and data protection law require.</p></div>
+<div class="lift" style="padding: 22px 24px; border-radius: 12px; background: #223241; display: flex; flex-direction: column; gap: 8px"><h3 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 21px; color: #ffffff">Your property on your phone</h3><p style="margin: 0; color: #5fd19b; font-size: 15px; font-weight: 700"><span class="live"></span>Door locked, 22 °C, quiet</p><p style="margin: 0; color: #b9c6d2; font-size: 16px">Door, noise, temperature and cleaning status in one place, wherever you live.</p></div>
+</div>
+</article>
 </div>
 <div style="margin-top: 22px; padding: 22px 26px; border-radius: 14px; background: #f6f7f4; display: flex; gap: 28px; flex-wrap: wrap; align-items: baseline">
 <p style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 20px">Extras</p>
 <p style="margin: 0; color: #34414c; flex: 1 1 420px">An AI assistant that answers guests, your own direct-booking website, and a refresh of the property itself: furniture, paint and decoration. One-off price, with three months of adjustments included.</p>
 </div>
-</div>
-</section>
-
-<section id="smart" style="padding-block: 72px; background: #16212b; color: #ffffff">
-<div class="wrap">
-<h2 style="font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 800; font-size: 44px; letter-spacing: -0.03em; line-height: 1.05; margin: 0 0 12px; color: #ffffff">Smart home and security</h2>
-<p style="color: #b9c6d2; margin: 0 0 36px; max-width: 40em">The technology that lets a property run without someone on site. We install it, connect it to your booking calendar and keep it working.</p>
-<div class="smartgrid">
-<div class="lift" style="padding: 22px 24px; border-radius: 12px; background: #1b2a37; display: flex; flex-direction: column; gap: 8px"><h3 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 21px; color: #ffffff">Smart locks</h3><p style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 800; font-size: 28px; letter-spacing: .12em; color: #f2b705">Code <span class="codewin"><span>4827<br>1593<br>7360<br>2948<br>4827</span></span></p><p style="margin: 0; color: #b9c6d2; font-size: 16px">A new door code for every booking, sent to the guest automatically and deleted at check-out. No keys to hand over or lose.</p></div>
-<div class="lift" style="padding: 22px 24px; border-radius: 12px; background: #1b2a37; display: flex; flex-direction: column; gap: 8px"><h3 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 21px; color: #ffffff">Noise monitoring</h3><p style="margin: 0; color: #b9c6d2; font-size: 16px">Sensors that measure volume only and never record conversations. We get an alert and act before the neighbours complain.</p></div>
-<div class="lift" style="padding: 22px 24px; border-radius: 12px; background: #1b2a37; display: flex; flex-direction: column; gap: 8px"><h3 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 21px; color: #ffffff">Leak sensors</h3><p style="margin: 0; color: #b9c6d2; font-size: 16px">An alert the moment there is water where there should not be, before it reaches the flat below.</p></div>
-<div class="lift" style="padding: 22px 24px; border-radius: 12px; background: #1b2a37; display: flex; flex-direction: column; gap: 8px"><h3 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 21px; color: #ffffff">Climate control</h3><p style="margin: 0; color: #b9c6d2; font-size: 16px">Air conditioning and heating switch off when guests leave and on before they arrive, so the bill only runs when someone is there.</p></div>
-<div class="lift" style="padding: 22px 24px; border-radius: 12px; background: #1b2a37; display: flex; flex-direction: column; gap: 8px"><h3 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 21px; color: #ffffff">Entrance cameras</h3><p style="margin: 0; color: #b9c6d2; font-size: 16px">At the door or gate only, never inside the property, as Airbnb rules and data protection law require.</p></div>
-<div class="lift" style="padding: 22px 24px; border-radius: 12px; background: #1b2a37; display: flex; flex-direction: column; gap: 8px"><h3 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 21px; color: #ffffff">Your property on your phone</h3><p style="margin: 0; color: #5fd19b; font-size: 15px; font-weight: 700"><span class="live"></span>Door locked, 22 °C, quiet</p><p style="margin: 0; color: #b9c6d2; font-size: 16px">Door, noise, temperature and cleaning status in one place, wherever you live.</p></div>
-</div>
-<p style="margin: 28px 0 0; color: #ffffff; font-weight: 700">Included in Setup or added on its own. Quoted per property.</p>
 </div>
 </section>
 
