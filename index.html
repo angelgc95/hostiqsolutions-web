@@ -55,6 +55,8 @@ a:focus-visible{outline:3px solid #1e4e8c;outline-offset:3px}
 .smartgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
 @media (max-width:900px){.hero,.about,.contact{grid-template-columns:1fr}.svc .big,.svc .side,.svc .half,.svc .full{grid-column:span 6}.path{grid-template-columns:1fr}.navlinks{display:none!important}.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.h1{font-size:44px}.daycard{position:relative;left:auto;bottom:auto;width:auto;margin-top:-40px;margin-inline:12px}.heroimg{height:380px!important}.smartgrid,.coregrid,.contrast,.steps,.hometiles{grid-template-columns:1fr}}
 </style>
+<link rel="stylesheet" href="motion.css">
+<script src="motion.js" defer></script>
 </head>
 <body>
 <div style="background: #f6f7f4; color: #16212b; font-family: 'Atkinson Hyperlegible', system-ui, sans-serif; font-size: 18px; line-height: 1.6">
@@ -76,11 +78,12 @@ a:focus-visible{outline:3px solid #1e4e8c;outline-offset:3px}
 <div class="wrap hero">
 <div>
 <h1 class="h1 in1" style="font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 800; line-height: 1.0; letter-spacing: -0.035em; margin: 0 0 22px">A holiday rental that runs without you.</h1>
-<p class="in2" style="font-size: 20px; color: #4a5560; margin: 0 0 30px; max-width: 34em">We look after holiday homes on the Costa del Sol. From urgent repairs to full rental management, we keep your property running, your guests happy and your income steady.</p>
+<p class="in2" style="font-size: 20px; color: #4a5560; margin: 0 0 30px; max-width: 34em">We optimise, manage and repair holiday rentals on the Costa del Sol, with the software we built for our own. Your property keeps earning, your guests stay happy and you stop answering messages at midnight.</p>
 <div class="in3" style="display: flex; gap: 14px; flex-wrap: wrap; align-items: center">
 <a href="contact.html" class="btn" style="background: #1e4e8c; color: #ffffff; font-weight: 700; text-decoration: none; padding: 15px 24px; border-radius: 10px">Tell us about your property</a>
 <a href="optimisation.html" style="color: #1e4e8c; font-weight: 700">See what we do to your listing</a>
 </div>
+<div class="chips in4"><span>5 years hosting in Dublin</span><span>English and Spanish</span><span>Málaga and the Costa del Sol</span></div>
 </div>
 
 <div style="position: relative; z-index: 1">
@@ -98,35 +101,129 @@ a:focus-visible{outline:3px solid #1e4e8c;outline-offset:3px}
 </div>
 </section>
 
-<section style="padding-block: 72px; background: #ffffff; border-block: 1px solid #dfe3e0">
+<section id="services" style="padding-block: 80px; background: #ffffff; border-block: 1px solid #dfe3e0">
 <div class="wrap">
-<h2 style="font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 800; font-size: 44px; letter-spacing: -0.03em; line-height: 1.05; margin: 0 0 32px">What we do</h2>
-<div class="hometiles">
-<a href="optimisation.html" class="lift" style="background: #1e4e8c; color: #ffffff; border-radius: 14px; padding: 30px; display: flex; flex-direction: column; gap: 12px; text-decoration: none; border: 1px solid #dfe3e0">
-<h3 style="font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 26px; letter-spacing: -0.02em; margin: 0; color: #ffffff">Listing and property optimisation</h3>
-<p style="margin: 0; color: #dbe6f4">Our core service. We rework your listing, automate your guest messages and turn the property into a boutique stay that runs on its own.</p>
-<span style="margin-top: auto; font-weight: 700; color: #ffffff">See how it works</span>
+<p class="eyebrow reveal" style="background: #e3efeb; color: #2f6f5e">What we do</p>
+<h2 class="hd reveal" style="font-size: 46px; margin: 0 0 14px; max-width: 16em">Three ways to take the work off your hands</h2>
+<p class="reveal" style="color: #4a5560; margin: 0 0 36px; max-width: 38em">Start with one, add the others when you need them. Prices exclude VAT.</p>
+<div class="tiles4">
+<a href="optimisation.html" class="tile core lift reveal" style="background: #1e4e8c; color: #ffffff; border-color: #1e4e8c">
+<span class="price" style="color: #f2b705; opacity: 1">Core service · Diagnosis 300 €</span>
+<h3 style="font-size: 32px; color: #ffffff">Listing and property optimisation</h3>
+<p style="color: #dbe6f4">We rework your listing, automate your guest messages, set up the software we built for our own apartment and turn the flat into a boutique stay that runs on its own.</p>
+<p style="color: #dbe6f4">Smart locks, noise and leak sensors and climate control, connected to your bookings.</p>
+<span class="go" style="color: #ffffff">See how it works</span>
 </a>
-<a href="services.html" class="lift" style="background: #ffffff; color: #16212b; border-radius: 14px; padding: 30px; display: flex; flex-direction: column; gap: 12px; text-decoration: none; border: 1px solid #dfe3e0">
-<h3 style="font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 26px; letter-spacing: -0.02em; margin: 0; color: #16212b">Management and maintenance</h3>
-<p style="margin: 0; color: #34414c">We run the whole property for 20% of what it earns, and handle repairs and urgent call-outs.</p>
-<span style="margin-top: auto; font-weight: 700; color: #16212b">See services</span>
+<a href="services.html#management" class="tile lift reveal d1" style="background: #ffffff; color: #16212b">
+<span class="price">20% of earnings</span>
+<h3>Full management</h3>
+<p style="color: #34414c">Hand us the keys. Listing, pricing, guests, cleaning, check-in and check-out, and a statement every month.</p>
+<span class="go">See management</span>
 </a>
-<a href="services.html" class="lift" style="background: #e3efeb; color: #16212b; border-radius: 14px; padding: 30px; display: flex; flex-direction: column; gap: 12px; text-decoration: none; border: 1px solid #dfe3e0">
-<h3 style="font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 26px; letter-spacing: -0.02em; margin: 0; color: #16212b">Smart home and security</h3>
-<p style="margin: 0; color: #34414c">Smart locks, noise and leak sensors, climate control and entrance cameras, connected to your bookings.</p>
-<span style="margin-top: auto; font-weight: 700; color: #16212b">See what we install</span>
+<a href="services.html#maintenance" class="tile lift reveal d2" style="background: #f2b705; color: #16212b; border-color: #f2b705">
+<span class="price">Per job · materials apart</span>
+<h3>Maintenance and repairs</h3>
+<p style="color: #2b2a1f">Something broke? Send us a photo. Urgent call-outs, carpentry and repairs, run by a carpenter.</p>
+<span class="go">See maintenance</span>
 </a>
 </div>
 </div>
 </section>
 
-<section style="padding-block: 72px">
-<div class="wrap about" style="align-items: center">
-<img src="img/IMG_0034.jpg" alt="Double bedroom in our Dublin apartment" style="width: 100%; border-radius: 14px; display: block">
+<section style="padding-block: 64px">
+<div class="wrap stats">
+<div class="stat reveal"><p class="n" data-count="5">5</p><p>years hosting our own apartment in Dublin</p></div>
+<div class="stat reveal d1" style="border-color: #1e4e8c"><p class="n" data-count="36" style="color: #1e4e8c">36</p><p>cleanings scheduled in our app in September 2026</p></div>
+<div class="stat reveal d2" style="border-color: #3f8f7a"><p class="n" data-count="2" style="color: #3f8f7a">2</p><p>apps we built to run our own rental</p></div>
+<div class="stat reveal d3" style="border-color: #f2b705"><p class="n">Same day</p><p>reply, in English or Spanish</p></div>
+</div>
+</section>
+
+<section id="software" style="padding-block: 88px; background: #ffffff; border-block: 1px solid #dfe3e0; overflow: hidden">
+<div class="wrap">
+<p class="eyebrow reveal" style="background: #16212b; color: #ffffff">Built by us, used by us</p>
+<h2 class="hd reveal" style="font-size: 46px; margin: 0 0 14px; max-width: 17em">The software behind our own rental, now set up for yours</h2>
+<p class="reveal" style="color: #4a5560; margin: 0 0 30px; max-width: 40em">These are the tools that ran our Dublin apartment day to day. We set them up and adapt them to your property.</p>
+<div class="tabs reveal" role="tablist" aria-label="Our software">
+<button role="tab" id="t-cm" aria-controls="p-cm" aria-selected="true">Cleaner Manager</button>
+<button role="tab" id="t-hba" aria-controls="p-hba" aria-selected="false" tabindex="-1">Booking site and guest portal</button>
+</div>
+
+<div class="panel" id="p-cm" role="tabpanel" aria-labelledby="t-cm">
 <div>
-<h2 style="font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 800; font-size: 40px; letter-spacing: -0.03em; line-height: 1.05; margin: 0 0 14px">We were hosts first</h2>
-<p style="margin: 0 0 18px; color: #34414c">Five years running our own holiday rentals in Dublin taught us what loses bookings and what earns good reviews. Now we bring it to the Costa del Sol.</p>
+<h3 class="hd" style="font-size: 32px; margin: 0">Every changeover on one screen</h3>
+<p style="color: #34414c; margin: 12px 0 0">Our operations app for cleaners and hosts. You see who cleans what and when, and you get proof that it was done.</p>
+<ul class="ticks">
+<li>All cleanings in one calendar, synced with your bookings</li>
+<li>Cleaners follow a step-by-step checklist on their phone</li>
+<li>Photo proof of every room before you approve it</li>
+<li>Hours, supplies and payments tracked for each cleaner</li>
+</ul>
+</div>
+<div class="stage">
+<div class="browser main reveal"><div class="bar"><i></i><i></i><i></i><b>cleannermanager.com · calendar</b></div><img src="img/app-cm-calendar.jpg" alt="Cleaner Manager calendar for September 2026 with 36 scheduled cleanings across two rooms" loading="lazy" width="1397" height="560"></div>
+<div class="browser card reveal d2 float slow"><img src="img/app-cm-proof.jpg" alt="Submitted cleaning with checklist checks, duration and four proof photos of the room" loading="lazy" width="788" height="780"></div>
+<div class="phone over reveal d3 float"><img src="img/app-cm-phone.jpg" alt="Cleaner app on a phone showing the cleaning checklist with clock-in" loading="lazy" width="600" height="1299"></div>
+</div>
+</div>
+
+<div class="panel" id="p-hba" role="tabpanel" aria-labelledby="t-hba" hidden>
+<div>
+<h3 class="hd" style="font-size: 32px; margin: 0">Direct bookings and a private guest portal</h3>
+<p style="color: #34414c; margin: 12px 0 0">Hosted by Angel, the booking website and guest app of our Dublin apartment.</p>
+<ul class="ticks">
+<li>A booking website with live availability, synced with Airbnb</li>
+<li>A private portal for confirmed guests: arrival, wifi, house manual, local tips</li>
+<li>An AI assistant that answers from the house manual, at any hour</li>
+<li>English, Spanish, Italian and French</li>
+</ul>
+<p style="margin: 18px 0 0"><a href="https://hosted-by-angel-booking.vercel.app/" style="font-weight: 700" rel="noopener">Visit the live booking site</a></p>
+</div>
+<div class="stage">
+<div class="browser main reveal"><div class="bar"><i></i><i></i><i></i><b>hosted-by-angel · guest portal</b></div><img src="img/app-hba-assistant.jpg" alt="Private guest portal with the AI assistant answering a question about heating and hot water" loading="lazy" width="1400" height="875"></div>
+<div class="browser card reveal d2 float slow"><div class="bar"><i></i><i></i><i></i></div><img src="img/app-hba-home.jpg" alt="Hosted by Angel booking website with an availability search over a photo of the room" loading="lazy" width="1400" height="875"></div>
+<div class="phone over reveal d3 float"><img src="img/app-hba-assistant-phone.jpg" alt="AI assistant on a phone answering a guest" loading="lazy" width="600" height="1299"></div>
+</div>
+</div>
+<p class="note">Real screens from our Dublin apartment. Names and booking codes are blurred. The cleaner's phone and the guest portal are shown with sample data.</p>
+</div>
+</section>
+
+<section class="fix" style="padding-block: 88px">
+<div class="wrap fixgrid">
+<div>
+<p class="eyebrow reveal" style="background: #f2b705; color: #16212b">Maintenance</p>
+<h2 class="hd reveal" style="font-size: 50px; margin: 0 0 16px; color: #ffffff">Something broke between guests? Send us a photo.</h2>
+<p class="reveal" style="color: #b9c6d2; margin: 0 0 26px; max-width: 32em">A dripping tap, a door that sticks, a wardrobe off its hinges. Small faults become bad reviews. We fix them, including urgent call-outs, and send you a photo when it is done.</p>
+<div class="reveal" style="display: flex; gap: 14px; flex-wrap: wrap; align-items: center">
+<a href="https://wa.me/34613887086?text=Hi%2C%20something%20needs%20fixing%20at%20my%20property" class="btn" style="background: #f2b705; color: #16212b; font-weight: 700; text-decoration: none; padding: 15px 24px; border-radius: 10px">Report a problem on WhatsApp</a>
+<a href="services.html#maintenance" style="color: #ffffff; font-weight: 700">What we fix</a>
+</div>
+</div>
+<div class="reveal d2">
+<div class="track" aria-label="How a call-out works">
+<div class="row"><div class="ic" aria-hidden="true">📷</div><div><b>You send a photo</b><span>On WhatsApp, in English or Spanish</span></div></div>
+<div class="row"><div class="ic" aria-hidden="true">🔎</div><div><b>We tell you what it needs</b><span>The job and the price, before we start</span></div></div>
+<div class="row"><div class="ic" aria-hidden="true">🛠️</div><div><b>We fix it</b><span>Between guests whenever possible</span></div></div>
+<div class="row"><div class="ic" aria-hidden="true">✅</div><div><b>Photo of the finished job</b><span>And the invoice, so you know where it stands</span></div></div>
+<div class="bar"><i></i></div>
+</div>
+</div>
+</div>
+<div class="marquee" style="margin-top: 56px; position: relative" aria-hidden="true">
+<div class="run">
+<span>Dripping taps</span><span>Blocked drains</span><span>Doors and locks</span><span>Wardrobes and shelves</span><span>Furniture repair</span><span>Furniture assembly</span><span>Paint touch-ups</span><span>Silicone and grout</span><span>Blinds and curtain rails</span><span>Bulbs and lamps</span><span>Electrics, gas and AC by licensed pros</span>
+<span>Dripping taps</span><span>Blocked drains</span><span>Doors and locks</span><span>Wardrobes and shelves</span><span>Furniture repair</span><span>Furniture assembly</span><span>Paint touch-ups</span><span>Silicone and grout</span><span>Blinds and curtain rails</span><span>Bulbs and lamps</span><span>Electrics, gas and AC by licensed pros</span>
+</div>
+</div>
+</section>
+
+<section style="padding-block: 80px">
+<div class="wrap about" style="align-items: center">
+<img src="img/IMG_0034.jpg" alt="Double bedroom in our Dublin apartment" class="reveal" style="width: 100%; border-radius: 14px; display: block" loading="lazy">
+<div class="reveal d1">
+<h2 class="hd" style="font-size: 40px; margin: 0 0 14px">We were hosts first</h2>
+<p style="margin: 0 0 18px; color: #34414c">Five years running our own holiday rental in Dublin taught us what loses bookings and what earns good reviews. We built the software above to run it. Now we bring all of it to the Costa del Sol.</p>
 <a href="about.html" style="font-weight: 700">Read our story</a>
 </div>
 </div>
